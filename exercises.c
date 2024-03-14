@@ -173,5 +173,5 @@ Nodo *crearListaEnlazada(int arr[], int size) {
     if (lst == NULL)
       return NULL;
   }
-  return NULL;
+  //return NULL;
 }
