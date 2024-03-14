@@ -27,15 +27,15 @@ Ejercicio 2: Invertir un Arreglo
 Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
-// void reverseArray(int arr[], int size) {
-void invertir(int *aarreglo, int tamanio) {
-  int vector[tamanio];
-  for (int i = 0; i < tamanio; i++) {
-    vector[i] = aarreglo[i];
+void reverseArray(int arr[], int size) {
+//void invertir(int *aarreglo, int tamanio) {
+  int vector[size];
+  for (int i = 0; i < size; i++) {
+    vector[i] = arr[i];
   }
   int k = 0;
-  for (int i = tamanio - 1; i > 0; i--) {
-    aarreglo[k] = vector[i - 1];
+  for (int i = size - 1; i > 0; i--) {
+      arr[k] = vector[i - 1];
     k++;
   }
 }
