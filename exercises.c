@@ -29,14 +29,14 @@ invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) {
   // void invertir(int *aarreglo, int tamanio) {
-  int vector[size];
+  int aux[size];
   for (int i = 0; i < size; i++) {
-    vector[i] = arr[i];
+    aux[i] = arr[i];
   }
   int k = 0;
-  int j = size;
-  for (int i = size - 1; i > 0; i--) {
-    arr[k] = vector[j - 1];
+  int j = size - 1;
+  for (int i = 0; i < size; i++) {
+    arr[k] = aux[j];
     k++;
     j--;
   }
