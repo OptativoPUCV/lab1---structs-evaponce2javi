@@ -167,6 +167,7 @@ Nodo *crearListaEnlazada(int arr[], int size) {
 
   for (int i = 0; i < size - 1; i++) {
     Nodo *nuevo = (Nodo *)malloc(size * sizeof(int));
+    Nodo *lst = (Nodo *)malloc(size * sizeof(int));
     if (nuevo == NULL)
       exit(EXIT_FAILURE);
 
