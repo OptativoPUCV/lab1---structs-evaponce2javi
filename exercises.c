@@ -116,8 +116,8 @@ int checkSorted(int arr[], int size) { // return -2; }
 Ejercicio 6: Información de una Biblioteca
 Descripción: Vamos a representar la información de una biblioteca. En la
 biblioteca, hay libros, y cada libro tiene un autor. Queremos organizar esta
-información utilizando estructuras anidadas en C. Escribe la función para
-inicializar la información de un libro.
+información utilizando estructuras anidadas en C. IMPORTANTE: Escribe la función
+para inicializar la información de un libro.
 */
 
 typedef struct {
@@ -133,12 +133,17 @@ typedef struct {
 
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
                       int anioNacimiento, int anioPublicacion) {
-  /*
-  datos= NULL;
-  datos = (tipoDato* )realloc(datos,(talla+1)*sizeof(tipoDato));
-  if (datos == NULL) exit(EXIT_FAILURE);)
-  */
+  strcpy(libro->titulo, titulo);
+  strcpy(libro->autor.nombre, nombreAutor);
+  libro->autor.anioNacimiento = anioNacimiento;
+  libro->anioPublicacion = anioPublicacion;
 }
+/*
+datos= NULL;
+datos = (tipoDato* )realloc(datos,(talla+1)*sizeof(tipoDato));
+if (datos == NULL) exit(EXIT_FAILURE);)
+strcpy(libro->titulo, titulo);
+*/
 
 /*
 Ejercicio 7: Lista enlazada de números
@@ -155,5 +160,5 @@ typedef struct nodo {
   int numero;
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
-
+// recorrer la lista e ir uno por uno los nodos
 Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
