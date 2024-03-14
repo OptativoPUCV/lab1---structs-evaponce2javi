@@ -99,3 +99,14 @@ Thu 14 Mar 2024 08:38:53 PM UTC:
  tests:  0|1
 total_score: 60/70
 839ae05
+Thu 14 Mar 2024 08:49:27 PM UTC: 
+ exercises.c | 21 +++++++++++++++++----
+ 1 file changed, 17 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:166:9: error: unused variable ‘ult’ [-Werror=unused-variable]
+  166 |   Nodo *ult = NULL;
+      |         ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+06cc5d3

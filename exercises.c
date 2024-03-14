@@ -148,11 +148,11 @@ strcpy(libro->titulo, titulo);
 /*
 Ejercicio 7: Lista enlazada de números
 Descripción: Escribe una función que tome un arreglo de enteros y su tamaño, y
-luego cree una lista enlazada usando la estructura Nodo. Cada nodo de la lista
+luego cree una LISTA ENLAZADA usando la estructura Nodo. Cada nodo de la lista
 debe contener un número del arreglo, y los nodos deben estar enlazados en el
-mismo orden que los números aparecen en el arreglo. El último nodo de la lista
+mismo orden que los números aparecen en el arreglo. ->El último nodo de la lista
 debe apuntar a NULL. La función debe devolver un puntero al primer nodo de la
-lista enlazada.
+lista enlazada.<-
 Recuerda reservar memoria dinámica para cada nodo usando malloc.
   */
 
@@ -161,4 +161,17 @@ typedef struct nodo {
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 // recorrer la lista e ir uno por uno los nodos
-Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+Nodo *crearListaEnlazada(int arr[], int size) {
+  Nodo *lst = NULL;
+  Nodo *ult = NULL;
+  for (int i = 0; i < size; i++) {
+    Nodo *Nodo2 = (Nodo *)malloc(size * sizeof(int));
+    if (Nodo2 == NULL)
+      exit(EXIT_FAILURE);
+    Nodo2->numero = arr[i];
+    Nodo2->siguiente = NULL;
+    if (lst == NULL)
+      return NULL;
+  }
+  return NULL;
+}
