@@ -110,3 +110,14 @@ exercises.c:166:9: error: unused variable ‘ult’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 06cc5d3
+Thu 14 Mar 2024 08:50:25 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:166:9: error: unused variable ‘ultimo’ [-Werror=unused-variable]
+  166 |   Nodo *ultimo = NULL;
+      |         ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+f4eafdf
