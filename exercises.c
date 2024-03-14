@@ -9,7 +9,7 @@ Ejercicio 1: Encuentra el Elemento Mayor
 Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y devuelva el valor más grande del arreglo.
 */
-int elMayor(int *vector, int tam) {
+int findMax(int *vector, int tam) {
   int mayor = vector[0];
   for (int i = 1; i < tam; i++) {
     if (vector[i] > mayor) {

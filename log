@@ -25,3 +25,25 @@ test.c:258:18: error: implicit declaration of function ‘checkSorted’; did yo
 cc1: all warnings being treated as errors
 Compilation failed
 1f8c574
+Thu 14 Mar 2024 08:16:57 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+test.c: In function ‘test_reverseArray’:
+test.c:125:5: error: implicit declaration of function ‘reverseArray’; did you mean ‘test_reverseArray’? [-Werror=implicit-function-declaration]
+  125 |     reverseArray(arr, size);
+      |     ^~~~~~~~~~~~
+      |     test_reverseArray
+test.c: In function ‘test_filterEvenNumbers’:
+test.c:151:19: error: implicit declaration of function ‘filterEvenNumbers’; did you mean ‘test_filterEvenNumbers’? [-Werror=implicit-function-declaration]
+  151 |     int *result = filterEvenNumbers(arr, size, &newSize);
+      |                   ^~~~~~~~~~~~~~~~~
+      |                   test_filterEvenNumbers
+test.c:151:19: error: initialization of ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+test.c: In function ‘test_checkSorted’:
+test.c:258:18: error: implicit declaration of function ‘checkSorted’; did you mean ‘test_checkSorted’? [-Werror=implicit-function-declaration]
+  258 |     int result = checkSorted(arr, size);
+      |                  ^~~~~~~~~~~
+      |                  test_checkSorted
+cc1: all warnings being treated as errors
+Compilation failed
+2235401
