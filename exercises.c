@@ -179,5 +179,5 @@ Nodo *crearListaEnlazada(int arr[], int size) {
       lst = nuevo;
     }
   }
-  return lst;
+  return *nuevo;
 }
