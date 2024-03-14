@@ -177,7 +177,7 @@ Nodo *crearListaEnlazada(int arr[], int size) {
       return NULL;
     }*/
 
-    if (fin != NULL) {
+    if (fin == NULL) {
       fin->siguiente = nuevo;
       fin = nuevo;
     }
