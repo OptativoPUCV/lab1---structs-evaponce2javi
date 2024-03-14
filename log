@@ -268,3 +268,14 @@ Thu 14 Mar 2024 09:07:34 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 f29b61a
+Thu 14 Mar 2024 09:11:03 PM UTC: 
+ exercises.c | 9 ++-------
+ 1 file changed, 2 insertions(+), 7 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:166:9: error: unused variable ‘fin’ [-Werror=unused-variable]
+  166 |   Nodo *fin = NULL;
+      |         ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+4fa1405

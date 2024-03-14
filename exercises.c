@@ -165,7 +165,7 @@ Nodo *crearListaEnlazada(int arr[], int size) {
   Nodo *lst = NULL;
   Nodo *fin = NULL;
 
-  for (int i = 0; i < size; i++) {
+  for (int i = 0; i < size - 1; i++) {
     Nodo *nuevo = (Nodo *)malloc(size * sizeof(int));
     if (nuevo == NULL)
       exit(EXIT_FAILURE);
@@ -173,13 +173,8 @@ Nodo *crearListaEnlazada(int arr[], int size) {
     nuevo->numero = arr[i];
     nuevo->siguiente = NULL;
 
-    /*if (lst == NULL) {
+    if (nuevo->siguiente == NULL) {
       return NULL;
-    }*/
-
-    if (fin == NULL) {
-      fin->siguiente = nuevo;
-      fin = nuevo;
     }
   }
   return lst;
