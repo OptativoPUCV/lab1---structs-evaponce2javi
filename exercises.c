@@ -28,14 +28,14 @@ Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) {
-//void invertir(int *aarreglo, int tamanio) {
+  // void invertir(int *aarreglo, int tamanio) {
   int vector[size];
   for (int i = 0; i < size; i++) {
     vector[i] = arr[i];
   }
   int k = 0;
   for (int i = size - 1; i > 0; i--) {
-      arr[k] = vector[i - 1];
+    arr[k] = vector[i - 1];
     k++;
   }
 }
@@ -46,17 +46,17 @@ Descripción: Escribe una función que tome un arreglo de enteros
 y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 */
-// int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
-int *filtrarPares(int *arreglo, int talla, int *nuevaTalla) {
-  int *vectorPares = malloc(talla * sizeof(int));
+int *filterEvenNumbers(int arr[], int size, int *newSize) { // return NULL; }
+  // int *filtrarPares(int *arreglo, int talla, int *nuevaTalla) {
+  int *vectorPares = malloc(size * sizeof(int));
   if (vectorPares == NULL)
     exit(EXIT_FAILURE);
 
-  (*nuevaTalla) = 0;
-  for (int i = 0; i < talla; i++) {
-    if (arreglo[i] % 2 == 0) {
-      vectorPares[*nuevaTalla] = arreglo[i];
-      (*nuevaTalla)++;
+  (*newSize) = 0;
+  for (int i = 0; i < size; i++) {
+    if (arr[i] % 2 == 0) {
+      vectorPares[*newSize] = arr[i];
+      (*newSize)++;
     }
   }
   return vectorPares;
