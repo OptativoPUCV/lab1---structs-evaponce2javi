@@ -176,8 +176,10 @@ Nodo *crearListaEnlazada(int arr[], int size) {
     nuevo->siguiente = NULL;
 
     if (inicio == NULL) {
-      lst->siguiente = nuevo;
-      lst = nuevo;
+      inicio = nuevo;
+      actual = nuevo;
+    } else {
+      actual->siguiente = nuevo;
     }
   }
   return inicio;
