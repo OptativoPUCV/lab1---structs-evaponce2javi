@@ -418,3 +418,22 @@ exercises.c:166:9: error: unused variable ‘act’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 aee55db
+Fri 15 Mar 2024 12:53:46 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:180:7: error: ‘actual’ undeclared (first use in this function); did you mean ‘actal’?
+  180 |       actual = nuevo;
+      |       ^~~~~~
+      |       actal
+exercises.c:180:7: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:167:9: error: unused variable ‘nuevo’ [-Werror=unused-variable]
+  167 |   Nodo *nuevo = NULL;
+      |         ^~~~~
+exercises.c:166:9: error: unused variable ‘actal’ [-Werror=unused-variable]
+  166 |   Nodo *actal = NULL;
+      |         ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3daa5c7
