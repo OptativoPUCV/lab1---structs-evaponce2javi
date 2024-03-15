@@ -162,26 +162,24 @@ typedef struct nodo {
 } Nodo;
 // recorrer la lista e ir uno por uno los nodos
 Nodo *crearListaEnlazada(int arr[], int size) {
-  Nodo *inicio = NULL;
+  Nodo *inicial = NULL;
   Nodo *act = NULL;
   Nodo *nuevo = NULL;
-
   for (int i = 0; i < size; i++) {
     nuevo = (Nodo *)malloc(size * sizeof(int));
-
     if (nuevo == NULL)
       exit(EXIT_FAILURE);
 
     nuevo->numero = arr[i];
     nuevo->siguiente = NULL;
 
-    if (inicio == NULL) {
-      inicio = nuevo;
+    if (inicial == NULL) {
+      inicial = nuevo;
       act = nuevo;
     } else {
       act->siguiente = nuevo;
       act = nuevo;
     }
   }
-  return inicio;
+  return inicial;
 }
