@@ -448,3 +448,14 @@ exercises.c:167:9: error: unused variable ‘nuevo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 06760fe
+Fri 15 Mar 2024 12:54:34 AM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:167:9: error: unused variable ‘nuevo’ [-Werror=unused-variable]
+  167 |   Nodo *nuevo = NULL;
+      |         ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3b5b0e8
